@@ -1,6 +1,25 @@
 const formulario = document.getElementById('form_solicitante');
 const inputs = document.querySelectorAll('#form_solicitante input');
 
+const actividad = document.getElementById('tipo_de_trabajo');
+actividad.addEventListener("change",(e)=> {
+	let nombre = e.target.value;
+	console,console.log(nombre);
+	if (nombre == "empleado") {
+		document.getElementById('contenedor__empleado').style.display = "grid";
+		document.getElementById('contenedor__independiente').style.display = "none";
+		document.getElementById('contenedor__rentista').style.display = "none";
+	}else if (nombre == "independiente") {
+		document.getElementById('contenedor__empleado').style.display = "none";
+		document.getElementById('contenedor__independiente').style.display = "grid";
+		document.getElementById('contenedor__rentista').style.display = "none";
+	}else {
+		document.getElementById('contenedor__empleado').style.display = "none";
+		document.getElementById('contenedor__independiente').style.display = "none";
+		document.getElementById('contenedor__rentista').style.display = "grid";
+	}
+});
+
 const expresiones = {
     plainText: /^[a-zA-ZÀ-ÿ\s]{1,30}$/,
 	cedulas: /^.\d{7,10}$/, // 7 a 10 digitos.
@@ -34,7 +53,6 @@ var campos = {
 	fax:false, 
 	ext:false, 
 	oficina_email:false, 
-	tipo_de_trabajo:false, 
 	entidad:false, 
 	actividad_economica:false, 
 	nit:false, 
@@ -59,7 +77,14 @@ var campos = {
 	valor_matricula:false, 
 	codigo:false, 
 	valor_credito:false, 
-	fechas_corte:false
+	fechas_corte:false,
+
+	independiente_cupacion:false,
+	independiente_entidad:false,
+
+	fecha_constitucion:false,
+	rentista_capital_nit:false,
+	rentista_capital_economica:false
 }
 
 
@@ -118,9 +143,6 @@ const validarFormulario = (e) => {
 		break;
         case 'oficina_email':
 			validarCampo(expresiones.correo, e.target, 'oficina_email');
-		break;
-        case 'tipo_de_trabajo':
-			validarCampo(expresiones.plainText, e.target, 'tipo_de_trabajo');
 		break;
         case 'actividad_economica':
 			validarCampo(expresiones.plainText, e.target, 'actividad_economica');
@@ -196,6 +218,21 @@ const validarFormulario = (e) => {
 		break; 
         case 'entidad':
 			validarCampo(expresiones.plainText, e.target, 'entidad');
+		break; 
+        case 'independiente_cupacion':
+			validarCampo(expresiones.plainText, e.target, 'independiente_cupacion');
+		break; 
+        case 'independiente_entidad':
+			validarCampo(expresiones.plainText, e.target, 'independiente_entidad');
+		break; 
+        case 'fecha_constitucion':
+			validarCampo(expresiones.fecha, e.target, 'fecha_constitucion');
+		break; 
+        case 'rentista_capital_nit':
+			validarCampo(expresiones.nit, e.target, 'rentista_capital_nit');
+		break; 
+        case 'rentista_capital_economica':
+			validarCampo(expresiones.plainText, e.target, 'rentista_capital_economica');
 		break; 
 	}
 }

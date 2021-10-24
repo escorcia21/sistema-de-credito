@@ -126,16 +126,27 @@ h1 {
 .referencias-familiares,
 .Ingresos-mensuales,
 .Egresos-mensuales,
-.actividad-laboral,
 .credito,
+.rentista_capital,
+.independiente,
+.empleado,
+.actividad_laboral_select,
 .archivos {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     justify-items: center;
 }
 
-/* botones */
+#contenedor__independiente ,
+#contenedor__rentista {
+    display: none;
+}
 
+#show {
+    display: grid;
+}
+
+/* botones */
 .botones {
     display: flex;
     justify-content: center;
@@ -193,15 +204,16 @@ a {
 }
 
 /* archivo */
-#file1 {
+#file1,#file2 {
     border: 0;
     display: none;
 }
 
+
 .upload-btn img{
     height: 20px;
     width: 20px;
-    margin-left: .5rem;
+    margin-left: 2.5rem;
 }
 
 
@@ -271,11 +283,14 @@ a {
     .referencias-familiares,
     .Ingresos-mensuales,
     .Egresos-mensuales,
-    .actividad-laboral,
+    .empleado,
+    .independiente,
+    .rentista_capital,
     .credito,
+    .actividad_laboral_select,
     .archivos {
         display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
         justify-items: center;
     }
 }

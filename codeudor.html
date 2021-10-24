@@ -42,7 +42,7 @@
     <main>
         <div class="form-container">
             <form method="POST" id="form_solicitante">
-                <h1>2. Información solicitante</h1>
+                <h1>3. Información codeudor</h1>
                 <p class="titulos">Información personal</p>
                 <div class="informacion-personal">
 
@@ -300,137 +300,30 @@
                         </div>
                     </div>
                 </div>
-
-
-                <p class="titulos">Referencias</p>
-                <div class="referencias">
-                    <p class="separadores"> Referencias familiares</p>
-                    <div class="referencias-familiares">
-                        <div class="field-container"  id="grupo__referencia_familiar">
-                            <p class="titulo">Familiar</p>
-                            <input type="text" name="referencia_familiar">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <div class="field-container" id="grupo__parentesco">
-                            <p class="titulo">Parentesco</p>
-                            <input type="text" name="parentesco">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <div class="field-container" id="grupo__familiar_telefono">
-                            <p class="titulo">Telefono</p>
-                            <input type="number" name="familiar_telefono">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <div class="field-container" id="grupo__familiar_ciudad">
-                            <p class="titulo">Ciudad</p>
-                            <input type="text" name="familiar_ciudad">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <div class="field-container" id="grupo__familiar_direccion">
-                            <p class="titulo">Dirección</p>
-                            <input type="text" name="familiar_direccion">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                    </div>
-                    <p class="separadores" style="margin-top: 1.6rem;"> Referencias personales</p>
-                    <div class="referencias-personales">
-                        <div class="field-container" id="grupo__referencia_personal">
-                            <p class="titulo">Personal</p>
-                            <input type="text" name="referencia_personal">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        
-                        <div class="field-container" id="grupo__personal_telefono">
-                            <p class="titulo">Telefono</p>
-                            <input type="number" name="personal_telefono">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <div class="field-container" id="grupo__personal_ciudad">
-                            <p class="titulo">Ciudad</p>
-                            <input type="text" name="personal_ciudad">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <div class="field-container" id="grupo__personal_direccion">
-                            <p class="titulo">Dirección</p>
-                            <input type="text" name="personal_direccion">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="titulos">Concepto de credito</p>
-                <div class="credito">
-                    <div class="field-container" id="grupo__valor_matricula">
-                        <p class="titulo">Valor de matricula</p>
-                        <input type="number"  name="valor_matricula">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <div class="field-container" id="grupo__codigo">
-                        <p class="titulo">Codigo</p>
-                        <input type="number" name="codigo">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <div class="field-container" id="grupo__valor_credito">
-                        <p class="titulo">Valor del credito</p>
-                        <input type="number" name="valor_credito">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <div class="field-container">
-                        <p class="titulo">Cuotas</p>
-                        <select name="cuotas">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="field-container">
-                        <p class="titulo">Semestre cursado</p>
-                        <select name="semestre">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
-                    </div>
-                    <div class="field-container" id="grupo__fechas_corte">
-                        <p class="titulo">Fechas de corte</p>
-                        <input type="date" name="fechas_corte">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <div class="field-container">
-                        <p class="titulo">Facultad</p>
-                        <select id="facultad" name="facultad">
-                            <option value="Ingenieria">Ingenieria</option>
-                            <option value="Derecho">Derecho</option>
-                        </select>
-                    </div>
-                    <div class="field-container">
-                        <p class="titulo">Pensionado</p>
-                        <select id="pensionado" name="pensionado">
-                            <option value="value1">Si</option>
-                            <option value="value2">No</option>
-                        </select>
-                    </div>
-                </div>
                 <p class="titulos">Soportes</p>   
                 <div class="archivos">
                     <div class="upload-foto">
                         <p class="titulo">Foto de la cedula</p>
-                        <label for="file1" id="lable-upload" class="upload-btn">
+                        <label for="file1" class="upload-btn">
                             <span id="txt">Cedula</span>
                             <div>
-                                <p id="status"></p>
                                 <img src="img/upload.svg" alt="">
                             </div>
                         </label>
-                        <input type="file" name="file1" id="file1" onchange="uploadFile()">
+                        <input type="file" id="file1" class="file" onchange="uploadCedula()">
                     </div>
+
+                    <div class="upload-foto">
+                        <p class="titulo">Carta laboral o Certeficado de ingresos</p>
+                        <label for="file1" class="upload-btn">
+                            <span id="txt1">Soporte</span>
+                            <div>
+                                <img src="img/upload.svg" alt="">
+                            </div>
+                        </label>
+                        <input type="file" id="file2" class="file" onchange="uploadCarta()">
+                    </div>
+
                 </div>
             </form>
             <div class="botones">
