@@ -1,0 +1,177 @@
+.Header-Usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    margin: auto;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.Logo img {
+    width: 60px;
+    height: 60px;
+}
+
+/* drop down */
+.user {
+    position: relative;
+    height: 100%;
+}
+
+.cuenta {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.desplegable {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.desplegable a:hover{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgba(1, 1, 1, 0.3);
+}
+
+.desplegable a+a:hover {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.desplegable a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    display: flex;
+}
+
+.desplegable p {
+    color: black;
+}
+
+
+.menu:hover .desplegable {
+    display: block;
+}
+
+.change{
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+.salir i{
+    font-size: 25px;
+    display: none;
+}
+
+.user-info{
+    display: flex;
+    color: white;
+}
+
+.user-info,
+.caja-boton{
+    pointer-events: none;
+}
+
+.user-info p
+{
+    align-self: center;
+}
+
+.Logo span {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+.caja-boton {
+    padding: 0px 15px;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.boton i:hover {
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: .3s ease all;
+}
+
+.user:hover{
+    cursor: pointer;
+}
+
+.user:hover .desplegable {
+    display: block;
+    cursor: pointer;
+}
+
+.user:hover .boton i {
+    transform: rotate(-90deg);
+    transition: .3s ease all;
+}
+
+#iconouser {
+    padding-bottom: 0;
+    margin-right: 15px;
+    font-size: 35px;
+}
+
+
+.user .boton {
+    padding-top: 5px;
+    border: none;
+}
+
+.caja-boton i {
+    font-size: 30px;
+}
+
+
+
+
+@media screen and (max-width: 540px) {
+    .Logo span,
+    .user-info p
+    {
+        display: none;
+    }
+    
+    .button p {
+        display: none;
+    }
+
+    .button i {
+        display: block;
+    }
+
+    .desplegable p {
+        display: none;
+    }
+
+    .change,.salir i{
+        display: block;
+    }
+
+}
+

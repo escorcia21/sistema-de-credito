@@ -1,0 +1,281 @@
+/* header {
+    width: 100%;
+    height: 70px;
+    background: white;
+} */
+
+body {
+    background-image: radial-gradient(ellipse 100% 100% at 50% 100%, var(--blue) 5%, rgb(54, 54, 92) 85%,rgb(49, 40, 68) 100%);
+}
+
+main {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    /* height: 150vh; */
+    margin: 4rem 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    width: 90%;
+    min-height: 62.5rem;
+    padding: 4rem 0;
+    border-radius: 1rem;
+    backdrop-filter: blur(32px);
+    background: hsla(345, 27%, 94%, 0.05);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+form {
+    width: 90%;
+}
+
+.field-container, .upload-foto {
+    margin-top: .5rem;
+    height: 100%;
+    width: 90%;
+    position: relative;
+}
+
+
+/* inputs */
+input[type=date],input[type=number],input[type=text],input[type=email],input[type=time] {
+    width: 100%;
+    /* border: 3px solid var(--secondary-color); */
+    border-radius: 50px;
+    height: 2rem;
+    padding: 1rem 1rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    padding-right: 20px;
+    padding-top: 4px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+select {
+    width: 100%;
+    /* border: 3px solid var(--secondary-color); */
+    /* border: none; */
+    border-radius: 50px;
+    font-size: 14px;
+    height: 2rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
+input:focus,select:focus {
+    outline: none;
+}
+
+/* titulos y subtitulos */
+.titulos {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 3px solid white;
+    width: 100%;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+/* contenedores */
+.informacion-personal, 
+.datos-documento, 
+.residencia, 
+.oficina, 
+.laboral,
+.referencias,
+.actividad-laboral,
+.credito,
+.archivos {
+    margin-top: 2rem;
+}
+
+.informacion-personal, 
+.datos-documento, 
+.residencia, 
+.oficina,
+.referencias-personales,
+.referencias-familiares,
+.Ingresos-mensuales,
+.Egresos-mensuales,
+.actividad-laboral,
+.credito,
+.archivos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    justify-items: center;
+}
+
+/* botones */
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.button {
+    font-size: 1rem;
+    border: 0;
+    border-radius: 25px;
+    height: 2.5rem;
+    width: 10rem;
+    color: var(--blue);
+    background-color: white;
+    font-weight: bold;
+    align-items: center;
+    margin: 0 .8rem;
+}
+
+.button i {
+    display: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.876);
+}
+
+#guardar {
+    background: var(--color-rojo);
+    color: white;
+    /* margin-left: 20px; */
+}
+
+#volver p{
+    color: var(--secondary-color);
+    /* margin-left: 20px; */
+}
+
+#descargar p{
+    color: var(--secondary-color);
+    /* margin-left: 20px; */
+}
+
+#guardar:hover {
+    background: var(--color-rojo-dark);
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* archivo */
+#file1 {
+    border: 0;
+    display: none;
+}
+
+.upload-btn img{
+    height: 20px;
+    width: 20px;
+    margin-left: .5rem;
+}
+
+
+/* .label-upload {
+    width: 100%;
+} */
+
+
+
+.upload-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 3px solid var(--secondary-color); */
+    border-radius: 50px;
+    height: 2rem;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.upload-btn div{
+    display: flex;
+    min-width: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upload-btn:hover {
+    cursor: pointer;
+}
+
+#status {
+    color: var(--secondary-color);
+}
+
+/* validaciones */
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+@media (max-width: 540px) {
+    .titulos {
+        text-align: center;
+    }
+    .informacion-personal, 
+    .datos-documento, 
+    .residencia, 
+    .oficina,
+    .referencias-personales,
+    .referencias-familiares,
+    .Ingresos-mensuales,
+    .Egresos-mensuales,
+    .actividad-laboral,
+    .credito,
+    .archivos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        justify-items: center;
+    }
+}
