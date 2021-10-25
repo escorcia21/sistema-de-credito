@@ -28,6 +28,8 @@
     display: flex;
     height: 100%;
     align-items: center;
+    min-width: 200px;
+    justify-content: right;
 }
 
 .desplegable {
@@ -37,6 +39,7 @@
     width: 100%;
     border-radius: 8px;
     z-index: 1;
+    min-width: 200px;
 }
 
 .desplegable a:hover{
@@ -147,31 +150,14 @@
     font-size: 30px;
 }
 
-
-
-
 @media screen and (max-width: 540px) {
     .Logo span,
     .user-info p
     {
         display: none;
     }
-    
-    .button p {
-        display: none;
+    .desplegable{
+        width: 5rem;
     }
-
-    .button i {
-        display: block;
-    }
-
-    .desplegable p {
-        display: none;
-    }
-
-    .change,.salir i{
-        display: block;
-    }
-
 }
 
