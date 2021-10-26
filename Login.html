@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/Login.css" type="text/css">
+    <link rel="stylesheet" href="style/normalize.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <title>Iniciar sesión</title>
+</head>
+
+<body>
+    <div class="cuerpo">
+        <form class="formulario" action="" method="POST">
+            <a href="Inicio.html"><img src="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg" alt="Universidad Libre">
+            </a>
+            <!-- esta parte son los input de usuario y contraseña -->
+            <div class="datos">
+                <h2>Usuario</h2>
+                <input class="cedula" type="text" >
+                <h2>Contraseña</h2>
+                <input class="contra"  type="password">
+            </div>
+
+            <div class="recu">
+                <a href="Recuperar.html" class="preg">
+                    <p class="control">¿Has olvidado tu contraseña?</p>
+                </a>
+            </div>
+
+            <div class="botones">
+                <div class="boton1">
+                    <input id="btn-iniciar" onclick="verificarinicio()" class="ini" type="button" value="Iniciar sesión"  >
+                </div>
+                <div class="boton2">
+                    <input class="cc" type="button" value="Crear cuenta" OnClick="location.href='Registro.html'" >
+                </div>
+                <!-- <a href="Registro.html"><button class="cc">Crear cuenta</button></a> -->
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="contenido-footer">
+            <h5 class="Terminos">Terminos y condiciones</h5>
+            <h5 class="Condiciones">Universidad Libre</h5>
+        </div>
+    </div>
+    <div id="contenedor-eliminar" class="contenedor-eliminar">
+        <div class="contenido-eliminar">
+            <div class="contenedor2">
+                <p style="color:black">Campos vacios</p>
+                    <div class="enviar">
+                        <button id="boton-cancelardelete" type="button">Cerrar</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>

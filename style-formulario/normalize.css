@@ -8,12 +8,15 @@
 
 :root {
     --color-rojo: rgba(226,0,26,1);
+    --color-rojo-dark: rgba(226, 0, 26, 0.842);
     --background-color: rgba(237,237,237,1);
     --secondary-color: #4A4A4A;
     --secondary-color-dark: #424242;
     --blue: rgba(26,45,75,1);
     --footer-color: #212020;
     --grisletras: #707070;
+    --grisuave: #9e9e9e;
+    --grisuave2: #c5c5c5;
 }
 
 

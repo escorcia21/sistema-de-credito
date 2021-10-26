@@ -1,0 +1,34 @@
+.contenedor-contenido {
+    display: grid;
+    grid-column: auto;
+    background-color: var(--background-color)
+}
+
+.contenedor-parla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor-parla ul {
+    text-align: center;
+}
+
+#plusicon {
+    font-size: 6em;
+    cursor: pointer;
+    color: black;
+}
+
+#plusicon:hover {
+    color: var(--grisletras);
+    transform: scale(1.3);
+    transition-duration: 0.7s;
+}
+
+li{
+    list-style: none;
+}
+

@@ -1,0 +1,446 @@
+.Encabezado{
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    box-shadow: 0 1px 4px black;
+    position: relative;
+    z-index: 13;
+}
+
+.Encabezado a:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+    color: var(--color-rojo);
+}
+#is_Seclected{
+    color: var(--color-rojo);
+    font-weight: bold;
+}
+
+.Extensiones-1{
+    display: flex;
+}
+
+.Extensiones-2{
+    display: flex;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right: 2em;
+}
+
+.button{
+    font-size: 1rem;
+    display: flex;
+    text-decoration: none;
+    padding: 1em;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(112,112,112,1);
+}
+
+.Logo{
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo span{
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.Logo img{
+    padding: 6px;
+}
+
+
+.malla-principal{
+    display: grid;
+    height: calc(100vh - 55px);
+    background-image: radial-gradient(ellipse 100% 100% at 50% 100%,var(--color-rojo) 2%,#a91b78 85%,rgb(158, 0, 119) 100%);
+    justify-content: center;
+    grid-template-columns: auto 35%;
+    align-items: center;
+    filter: drop-shadow(0px 3px 2px crimson);
+    position: relative;
+    z-index: 11;
+    min-height: 640px;
+}
+
+.malla-principal span{
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255,255,255,1);
+}
+
+.Texto-Principal{
+    display: grid;
+    grid-template-rows: 70% 50%;
+    align-items: center;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.Foto-Estudiante{
+    z-index: 5;
+    position: relative;
+    filter: drop-shadow(0px 3px 2px crimson);
+    animation-duration: 2s;
+    animation-name: slidein;
+    
+}
+
+.texto1{
+    font-size: 2.8rem;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -100%;
+    }
+    
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.Malla-texto2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    margin-left: -4rem;
+}
+
+.texto2 {
+    font-size: 20px;
+    background-color: var(--blue);
+    padding: 5px 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Linea{
+    height: .2em;
+    background-color: white;
+}
+
+.texto2 span{
+    text-align: center;
+}
+
+
+@media(max-width: 768px) {
+    .Foto-Estudiante{
+        height: 100vw;
+        max-height: 400px;
+    }
+
+    .texto1{
+        font-size: 5.5vw;
+        padding: 1rem;
+    }
+    .texto2{
+        font-size: 3.5vw;
+        margin: 1rem;
+    }
+
+    .Linea{
+        display: none;
+    }
+
+    .Logo{
+        display: none;
+    }
+    #Sobre{
+        display: none;
+    }
+    .button{
+        padding: .5rem;
+        font-size: .9rem;
+    }
+
+    .Malla-texto2{
+        margin: 0;
+        margin-top: -2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Extensiones-2{
+        padding: 0;
+    }
+    .malla-principal{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.Body-Abajo{
+    background-color: #EDEDED;
+    padding-right: 15%;
+    padding-left: 15%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 4px #101012;
+    position: relative;
+    z-index: 10;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.Lista{
+    color: rgb(0, 0, 0);
+    text-align: left;
+
+}
+
+.titulo-lista{
+    display: flex;
+    font-weight: bold;
+    color: var(--blue);
+    font-size: 50px;
+    justify-content: center;
+    margin-bottom: .5em;
+}
+
+.Lista-1{
+    display: grid;
+    grid-template-columns: min-content auto;
+    border-bottom: 2px solid var(--grisletras);
+    font-size: 20px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    align-items: center;
+    padding-right: .7em;
+    color: #707070 ;
+}
+
+
+#Ultimo{
+    border-bottom: 0;
+}
+
+.Numero{
+    font-size: 20px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: .7em;
+    margin-right: .7em;
+}
+
+
+@media(max-width: 768px) {
+    .Body-Abajo{
+        padding: 1em 2%;
+    }
+    .titulo-lista{
+        font-size: 2.5rem;
+    }
+    .Numero{
+        width: 35px;
+        height: 35px;
+        margin: 0 .5rem;
+        font-size: 1rem;
+    }
+    .Lista-1{
+        font-size: 1rem;
+    }
+}
+
+.Requisito{
+    background-color: var(--background-color);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.Requisito-Malla{
+    font-size: 20px;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    color: #707070;
+}
+
+.Requisito li{
+    padding-left: 2em;
+    list-style-position: inside;
+}
+
+.Requisito ul{
+    padding-bottom: 1.5em;
+}
+
+.Requisitos-Contenido{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#Requisito-Titulo{
+    font-size: 40px;
+    background-color: var(--blue);
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+@media(max-width: 768px) {
+    .Requisitos-Contenido{
+        font-size: 1rem;
+    }
+}
+
+.Footer-1{
+    position: relative;
+    color: rgba(255,255,255,1);
+    background-color: var(--footer-color);
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 1em 13em;
+}
+
+.Footer-2{
+    position: relative;
+    font-size: .9rem;
+    color: rgba(255,255,255,1);
+    background-color: var(--color-rojo);
+    padding: 1em 13em;
+}
+
+.Titulos-Footer-1{
+    font-size: 1.5rem;
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+}
+.Iconos{
+    display: flex;
+}
+
+.Iconos svg{
+    margin-right: .5em;
+    cursor: pointer;
+    fill: white;
+}
+
+.Twitter svg:hover{
+    animation-duration: .5s;
+    animation-name: Ani-Titter;
+    animation-fill-mode: forwards;
+}
+
+.Instagram svg:hover{
+    animation-duration: .5s;
+    animation-name: Ani-Insta;
+    animation-fill-mode: forwards;
+}
+
+.Facebook svg:hover{
+    animation-duration: .5s;
+    animation-name: Ani-Face;
+    animation-fill-mode: forwards;
+}
+
+@media(max-width: 768px) {
+    .Footer-1{
+        font-size: .7rem;
+        padding: 1rem 1rem;
+    }
+    .Footer-1 img{
+        height: 10vh;
+    }
+    .Titulos-Footer-1{
+        font-size: 1rem;
+    }
+    .Footer-2{
+        font-size: .7rem;
+        padding: 1rem 1.5rem;
+
+    }
+    .Iconos svg{
+        width: 70%;
+        margin-right: .2rem;
+    }
+}
+
+@media(max-width: 560px) {
+    .Footer-1{
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+    
+    .Certificados-Encuentranos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 1em;
+    }
+}
+
+@keyframes Ani-Titter {
+    from { 
+    }
+    to {
+        fill: #00a6e9 ;
+    }
+}
+
+@keyframes Ani-Face {
+    from { 
+    }
+    to {
+        fill: #345aa5 ;
+    }
+}
+
+@keyframes Ani-Insta {
+    from {
+        
+    }
+    
+    to {
+        fill: #c60d47;
+    }
+}

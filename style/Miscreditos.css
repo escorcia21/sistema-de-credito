@@ -1,0 +1,28 @@
+.contenedor-parla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor-parla ul {
+    text-align: center;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+#contrato {
+    font-size: 6em;
+}
+
+.consulteCred {
+    color: var(--blue);
+}
+
+.consulteCred:hover {
+    color: var(--grisletras);
+}

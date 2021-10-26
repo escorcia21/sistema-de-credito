@@ -1,0 +1,145 @@
+.contenedor-contenido {
+    display: grid;
+    grid-column: auto;
+    background-color: var(--background-color)
+}
+
+.contenedor-parla {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 1rem;
+}
+
+.contenedor_tabla {
+    display: flex;
+    padding-top: 20px;
+    width: 850px;
+}
+
+.search-text {
+    border: none;
+    border-radius: 40px;
+    height: 35px;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+}
+
+.Descargar{
+    align-items: center;
+}
+
+#DescargarBoton{
+    font-size: 23px;
+    padding-left: 10px;
+    color: black;
+}
+
+.Aprobar{
+    align-items: center;
+}
+
+#Botonaprovar, #Botonaprovar2,#Botonaprovar3,#Botonaprovar4{
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+#Botonaprovar:hover,#Botonaprovar2:hover,#Botonaprovar3:hover,#Botonaprovar4:hover{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+#Desaprobar:hover,#Desaprobar2:hover,#Desaprobar3:hover,#Desaprobar4:hover{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+
+#Desaprobar,#Desaprobar2,#Desaprobar3,#Desaprobar4{
+    font-size: 23px;
+    padding-left: 5px;
+    color: rgb(0, 0, 0);
+
+}
+
+#search:hover {
+    color: var(--blue);
+}
+
+.Opciones_combobox select {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 40px;    
+    height: 35px;
+    margin: 0 0 0 5px;
+    padding: 20fr;
+    width: 180px;
+}
+
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-scroll {
+    width: 850px;
+    height: 350px;
+    max-height: 550px;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: var(--blue);
+}
+
+.text {
+    color: white;
+}
+
+th,
+td {
+    border-bottom: 0.5px solid var(--grisuave2);
+    padding: 20px 40px;
+}
+
+td {
+    background-color: white;
+}
+
+.table-scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--color-rojo);
+}
+
+.confirmar{
+    width: 180px;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: #25AB5B;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.confirmar:hover{
+    background-color: #468B62;
+
+}
+
+.contenedor-boton{
+    padding-top: 1rem;
+}

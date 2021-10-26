@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/Registro.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <title>Crear cuenta</title>
+</head>
+
+<body>
+    <div class="cuerpo">
+
+        <div class="malla">
+            <div class="arriba">
+                <a href="Inicio.html"><img src="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg"
+                        alt="Universidad Libre"></a>
+                <h1>Crear cuenta</h1>
+    
+            </div>
+            <div class="justificar">
+                <form method="POST" class="formulario">
+                    <div class="nombre-ape">
+                        <input class="nombre" type="text" placeholder="Nombre">
+                        <input class="apellido" type="text" placeholder="Apellido">
+        
+                        <input class="correo" type="email" placeholder="Correo electronico">
+                        <input class="cedula" type="number" placeholder="Cedula">
+        
+                        <input class="contra" type="password" placeholder="Contraseña">
+                        <input class="confirmacontra" type="password" placeholder="Confirmar contraseña">
+                        <div>
+        
+                            <h4 class="t">Fecha de nacimiento</h4>
+                            <input  class="control fecha" type="date" name="fe" id="fe">
+                        </div>
+                        <div>
+                            <h4 class="t2">Sexo</h4>
+                            <select class="sexo" name="sexo" id="sexs">
+                                <option value="">Selecciona una opción</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="enviar">
+                        <input id="btn-reg" onclick="verificarCrear()" class="reg" type="button" value="Registrarse">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
+
+
+    </div>
+
+
+    <div class="footer">
+        <div class="contenido-footer">
+            <h5 class="Terminos">Terminos y condiciones</h5>
+            <h5 class="Condiciones">Universidad Libre</h5>
+        </div>
+    </div>
+    <div id="contenedor-eliminar" class="contenedor-eliminar">
+        <div class="contenido-eliminar">
+            <div class="contenedor2">
+                <p  style="color:black">Hay campos vacios</p>
+                    <div class="enviar2">
+                        <button id="boton-cancelardelete"  type="button">Cerrar</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

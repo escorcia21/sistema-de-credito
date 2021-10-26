@@ -1,0 +1,232 @@
+.titulo {
+    font-size: 3em;
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+#inicioicon {
+    margin-right: .5em;
+}
+
+#is_selected i {
+    color: var(--color-rojo);
+}
+
+#is_selected a {
+    color: var(--color-rojo);
+}
+
+.contenedor-honguito {
+    display: grid;
+    height: calc(100vh - 156px);
+    position: relative;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.caja-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    background-color: red;
+}
+
+.contenedor-nav a {
+    font-size: 2em;
+    color: var(--grisletras);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-nav {
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+    position: absolute;
+    z-index: 1;
+    max-width: 350px;
+    min-width: 260px;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: white;
+}
+
+.contenedor_a {
+    user-select: none;
+}
+
+.contenedor_a span{
+    font-size: .6em;
+    user-select: none;
+}
+
+.contenedor_a:hover{
+    cursor: pointer;
+    background-color: var(--background-color);
+    transition: all .3s ease;
+}
+
+.contenedor_a:hover .tag_c,.contenedor_a:hover .tag_a,.contenedor_a:hover .tag_b,.contenedor_a:hover .tag_d{
+    color: var(--color-rojo);
+}
+
+#iniciocon_barra{
+    font-size: 30px;
+    min-width: 28px;
+}
+
+.Div-Iconos{
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-contenido {
+    display: flex;
+    background-color: var(--background-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-parla{
+    min-height: 60vh;
+    width: 70vw;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.contenedor-disable{
+    background-color: white;
+    max-width: 64px;
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.contenedor-disable a{
+    font-size: 2em;
+    color: var(--grisletras);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-disable span{
+    display: none;
+}
+
+img{
+    height: 3em;
+}
+
+.tag_menu{
+    justify-content: space-between;
+}
+
+.tag_menu span{
+    padding-left: 1rem;
+}
+
+@media(max-width: 1300px) {
+    .contenedor-parla{
+        width: 75vw;
+    }
+    .Div-Iconos{
+        height: 52px;
+        width: 52px;
+    }
+}
+
+@media(max-width: 768px) {
+    .contenedor-parla{
+        width: 85vw;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .contenedor-honguito {
+        height: calc(100vh - 132px)
+    }
+}
+
+@media(max-width: 590px) {
+    .contenedor-parla{
+        width: 85vw;
+    }
+    .titulo{
+        font-size: 1.5em;
+    }
+    .Div-Iconos{
+        height: 40px;
+        width: 40px;
+    }
+    .Logo span{
+        display: none;
+    }
+    .Logo {
+        height: 2em;
+    }
+    .boton i{
+        font-size: 23px;
+    }
+    .contenedor-honguito {
+        height: calc(100vh - 103px);
+    }
+    .contenedor-parla{
+       padding: 1rem; 
+    }
+}
+
+@media(max-width: 420px) {
+    .contenedor-honguito {
+        height: calc(100vh - 103px - 54px);
+    }
+    #Menu nav{
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        position: fixed;
+        background-color: white;
+        width: 100vw;
+        bottom: 0;
+    }
+    .clase-nav{
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: 50% 50% !important;
+    }
+    .contenedor-disable, .contenedor-nav{
+        transform: none;
+        justify-content: center;
+    }
+    .contenedor-disable a,.contenedor-nav a{
+        justify-content: center;
+        border-top: 1px solid var(--grisuave);
+        display: flex;
+        flex-direction: column;
+    }
+    #Menu{
+        max-width: none;
+        width: 100vw;
+    }
+    #Boton_Menu{
+        display: none;
+    }
+    .contenedor-disable span,.contenedor-nav span{
+        display: block;
+        font-size: 9px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .contenedor-parla li{
+        padding-left: 0.5rem;
+    }
+}

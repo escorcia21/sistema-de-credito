@@ -1,0 +1,109 @@
+.contenedor-contenido {
+    display: grid;
+    grid-column: auto;
+    background-color: var(--background-color)
+}
+
+.contenedor-parla {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_superior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.contenedor_tabla {
+    display: flex;
+    padding-top: 40px;
+    width: 70rem;
+}
+
+.search-text {
+    border: none;
+    border-radius: 40px;
+    height: 35px;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    font-size: 23px;
+    padding-left: 10px;
+    color: black;
+}
+
+#search:hover {
+    color: var(--blue);
+}
+
+/* .Opciones_combobox select {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 40px;    
+    height: 35px;
+    margin: 0 0 0 5px;
+    padding: 20fr;
+    width: 180px;
+    
+} */
+
+#leadType:hover{
+    cursor: pointer;
+}
+
+
+
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-scroll {
+    width: 70rem;
+    height: 530px;
+    max-height: 700px;
+    overflow-y: scroll;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: var(--blue);
+}
+
+.text {
+    color: white;
+}
+
+th,
+td {
+    border-bottom: 0.5px solid var(--grisuave2);
+    padding: 20px 40px;
+}
+
+td {
+    background-color: white;
+}
+
+.table-scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--color-rojo);
+}
+
