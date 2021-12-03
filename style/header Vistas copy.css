@@ -1,0 +1,142 @@
+.Header-Usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+}
+
+
+.Extensiones-1 a:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+    color: var(--color-rojo);
+}
+
+.Extensiones-1{
+    display: flex;
+}
+
+.Extensiones-2{
+    display: flex;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right: 2em;
+}
+
+.button{
+    font-size: 1rem;
+    display: flex;
+    text-decoration: none;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    color: rgba(112,112,112,1);
+}
+
+.Logo{
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo span{
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.Logo img{
+    padding: 6px;
+}
+
+#iconouser {
+    margin-right: 15px;
+    font-size: 35px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-boton {
+    margin: auto;
+    padding: 0px 15px;
+}
+
+.boton i:hover {
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: .3s ease all;
+}
+
+.caja-boton {
+    position: relative;
+    display: inline-block;
+}
+
+.user:hover .desplegable {
+    display: block;
+    cursor: pointer;
+}
+
+.user:hover .boton i {
+    transform: rotate(-90deg);
+    transition: .3s ease all;
+}
+
+
+.user:hover {
+    cursor: pointer;
+}
+
+.user .boton {
+    padding-top: 5px;
+    border: none;
+    background-color: #fff;
+}
+
+.caja-boton i {
+    font-size: 30px;
+}
+
+.desplegable {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border-radius: 5%;
+    border-bottom: 1px var(--grisuave) solid;
+}
+
+.desplegable a:hover {
+    background-color: var(--grisuave);
+}
+
+.caja-boton .desplegable {
+    right: 18px;
+}
+
+.desplegable a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+@media screen and (max-width: 540px) {
+    .user p
+    {
+        display: none;
+    }
+    .desplegable{
+        width: 5rem;
+    }
+}

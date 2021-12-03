@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambios de Rol</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/cambio_rol.css">
+    <link rel="stylesheet" href="style/header Vistas copy.css">
+</head>
+<body>
+    <header>
+        <div class="Header-Usuario">
+            <nav class="Extensiones-1">
+                <div class="Logo"><img class="" src="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg" alt="" height="59"><span>Universidad<br>Libre</span></div>
+                <a class="button" href="cambioRol.html">Roles</a>
+                <a class="button" href="">Formatos</a>
+            </nav>
+            <div class="user">
+                <i class="fas fa-user" id="iconouser"></i>
+                <p>Johan Ramírez</p>
+                <div class="caja-boton">
+                    <button class="boton"><i class="fas fa-caret-left"></i>
+                    </button>
+                    <div class="desplegable">
+                        <a href="">Cambiar clave</a>
+                        <a href="">Cerrar sesión</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </header>
+    
+    <div class="container_todo-rol">
+        <div class="container_contenido-rol">
+            
+            <h1>Cambio de rol</h1>
+            <p class="titulos">Buscar usuario</p>
+            <div class="container_buscar-id">
+                <div class="formulario-grupo" id="grupo__identificacion">
+                    <p class="formulario__label">Identificación</p>
+                    <input readonly="readonly" class="formulario__input" id="identificacion" type="text" name="identificacion" placeholder="22145210">
+                </div>  
+                <div class="formulario-grupo">
+                    <p>Buscar</p>
+                    <input  class="formulario__input"id="buscar" type="text" name="buscar" placeholder="Buscar">
+                </div>  
+                <div class="formulario-grupo">
+                    <p>Rol actual</p>
+                    <input  class="formulario__input"id="buscar" type="text" name="buscar" placeholder="ESTUDIANTE">
+                </div>  
+            </div>
+
+            <p class="titulos">Información personal</p>
+            <div class="container_informacion" >
+                <div class="formulario-grupo" id="grupo__nombre">
+                    <p class="formulario__label">Nombre</p>
+                    <input readonly="readonly"  class="formulario__input"id="nombre" type="text" name="nombre" placeholder="Maria Isabel">
+                </div>  
+
+                <div class="formulario-grupo" id="grupo__apellido">
+                    <p class="formulario__label">Apellido</p>
+                    <input readonly="readonly"  class="formulario__input"id="apellido" type="text" name="apellido" placeholder="Florez Rodriguez">
+                </div> 
+
+                <div class="formulario-grupo" id="grupo__correo">
+                    <p  class="formulario__label">Correo</p>
+                    <input readonly="readonly"  class="formulario__input"id="correo" type="text" name="correo" placeholder="mari@correo.com">
+                </div> 
+
+                <div class="formulario-grupo" id="grupo__celular">
+                    <p class="formulario__label">Celular</p>
+                    <input readonly="readonly"  class="formulario__input"id="celular" type="text" name="celular" placeholder="3015895436">
+                </div> 
+
+                <div class="formulario-grupo">
+                    <p class="formulario__label">Cambiar rol</p>
+                    <select class="formulario-lista-des"name="SELECCIONAR">
+                        <option value="1">Seleccionar</option> 
+                        <option value="2">Estudiante</option> 
+                        <option value="3">Administrador</option> 
+                        <option value="4">Revisor</option>
+                        <option value="5">Cartera</option> 
+                    </select>
+                </div>
+
+            </div>
+            <div class="container-botones">
+                
+                <button type="submit" class="formulario__btn cancelar">Cancelar</button>
+                <button type="submit" class="formulario__btn">Actualizar</button>
+                
+            </div>
+        </div>
+    </div>
+                
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
