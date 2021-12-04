@@ -7,6 +7,7 @@
 
 h1 {
     text-align: center;
+    margin: 0 1rem;
 }
 
 .container_todo-parametros{
@@ -38,17 +39,12 @@ h1 {
 .container-contenido-formatos {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    gap: 45px;
+    gap: 20px;
     padding: 40px 0;
 }
 
 .container_todo-formatos{
     padding-top: 40px;
-}
-
-.container-titulos-formatos{
-    display: flex;
-    justify-self: center;
 }
 
 .container-titulos-formatos i{
@@ -61,21 +57,34 @@ h1 {
     color:#B42A2A ;
 }
 
-.formulario__btn{
-    height: 45px;
-    background: #0f0644;
-    color: #fff;
+.formulario__btn {
+    font-size: 1rem;
+    border: 0;
+    border-radius: 25px;
+    height: 2.5rem;
+    width: 10rem;
+    color: white;
+    background-color: var(--color-rojo);
     font-weight: bold;
-    border-radius: 5px;
-    width: 35%;
-    cursor: pointer;
-    margin-bottom: 15px;
+    align-items: center;
+    margin-bottom:1rem;
+}
+
+.formulario__btn i {
+    display: none;
 }
 
 .formulario__btn:hover{
+    cursor: pointer;
+    background-color: rgb(177, 2, 22);
+}
 
-    background: #B42A2A;
+.cancelar {
+    background-color: rgba(26,45,75,1);
+}
 
+.cancelar:hover {
+    background-color: rgb(20, 35, 58);
 }
 
 /*  */
@@ -120,4 +129,78 @@ td {
 
 .table-scroll::-webkit-scrollbar-thumb {
     background-color: var(--color-rojo);
+}
+
+/* uploads */
+#file1,#file2,#file3 {
+    border: 0;
+    display: none;
+}
+
+
+.upload-btn img{
+    height: 20px;
+    width: 20px;
+    margin-left: 2.5rem;
+}
+
+.upload{
+    width: 90%;
+    justify-self: center;
+}
+
+.upload-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 3px solid var(--secondary-color); */
+    border-radius: 50px;
+    height: 2rem;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.upload-btn div{
+    display: flex;
+    min-width: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upload-btn:hover {
+    cursor: pointer;
+}
+
+#status1,#status2,#status3 {
+    color: var(--secondary-color);
+}
+
+.container_todo-formatos span {
+    min-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: " [..]";
+}
+
+@media (max-width: 540px) {
+    .titulos {
+        text-align: center;
+    }
+
+    .container_todo-formatos {
+        width: 99%;
+    }
+
+    .container_todo-formatos h1 {
+        font-size: 1.5rem;
+    }
+
+    .container-contenido-formatos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+        justify-items: center;
+    }
+
+
 }
