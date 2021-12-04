@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg" />
+    
+    <link rel="stylesheet" href="style/header Vistas.css">
+    <link rel="stylesheet" href="style/Revision-joyce.css">
+    <link rel="stylesheet" href="style/Missolicitudes.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/Componentes-Usuario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <div class="Header-Usuario">
+            <div class="Logo"><img class="" src="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg" alt=""><span>Universidad Libre</span>
+            </div>
+            <div class="user">
+                <i class="fas fa-user" id="iconouser"></i>
+                <p>Johan Ramírez</p>
+                <div class="caja-boton">
+                    <button class="boton"><i class="fas fa-caret-left"></i>
+                    </button>
+                    <div class="desplegable">
+                        <a href="">Cambiar clave</a>
+                        <a href="">Cerrar sesión</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="Contenedor-hongo">
+            <div class="caja-title">
+                <h3 class="titulo"><i id="inicioicon" class="fas fa-clock"></i>CREDITOS PENDIENTES</h3>
+            </div>
+        </div>
+
+
+
+        <div class="contenedor-honguito">
+            <div id="Menu" class="contenedor-disable">
+                <nav class="clase-nav">
+                    <div id="Boton_Menu" class="contenedor_a">
+                        <a class="tag_menu" >
+                            <span>Revisor</span>
+                            <div class="Div-Iconos">
+                                <i id="iniciocon_barra" class="fas fa-bars"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contenedor_a">
+                        <a class="tag_a" href="Inicio-cartera.html">
+                            <div class="Div-Iconos"><i id="iniciocon2" class="fas fa-home"></i></div>
+                            <span>INICIO</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contenedor_a">
+                        <a class="tag_b" href="Cartera-creditos-pendientes.html">
+                            <div class="Div-Iconos">
+                                <i id="iniciocon2" class="fas fa-clock"></i> 
+                            </div>
+                            <span>Creditos<br>pendientes</span>
+                        </a>
+                    </div>
+
+                    
+                    <div class="contenedor_a">
+                        <a class="tag_b" href="Cartera-creditos-autenticado.html">
+                            <div class="Div-Iconos">
+                                <i id="iniciocon2" class="fas fa-clipboard-list"></i>
+                            </div>
+                            <span>Formatos<br>autenticados</span>
+                        </a>
+                    </div>
+                    
+                </nav>
+            </div>
+
+            <div class="contenedor-contenido">
+                <div class="contenedor-parla">
+                    <div class="contenedor_superior">
+                        <h2 class="titulo-tabla">Estudiantes con creditos pendientes</h2>
+                     <!--<div class="search-box">
+                            <input class="search-text " type="text" name "" placeholder="Buscar...">
+                            <a href=""><i id="search" class="fas fa-search"></i></a>
+                        </div>-->   
+                        <div class="combobox">
+                            <p class="Opciones_combobox">
+                                <span style="padding: right 4rm;">Estado:
+                                    <select id="leadType" class="box" name="lead_type">
+                                        <option value="1">Pendientes</option>
+                                        <option value="2">Aceptados</option>
+                                        <option value="3">Rechazados</option>
+                                    </select>
+                                </span>
+                            
+                            </p>
+                        </div>
+                     
+
+                    </div>
+
+                    <div class="contenedor_tabla">
+                        <div class="table-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="text">Cedula</th>
+                                        <th class="text">Nombre</th>
+                                        <th class="text">Carrera</th>
+                                        <th class="text">Semestre</th>
+                                        <th class="text">Valor Semestre</th>
+                                        <th class="text">Fecha credito</th>
+                                        <th class="text">Estado</th>
+                                        <th class="text">Ver</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                           1
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           2
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           3
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            5
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          6
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          7
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            8
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           9
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          10
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           11
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           12
+                                        </td>
+                                        <td>mico mandante</td>
+                                        <td>Sistemas</td>
+                                        <td>7</td>
+                                        <td>300000</td>
+                                        <td>28/05/2021</td>
+                                        <td>Aprobado</td>
+                                        <td><button>Click me  </button></td>
+
+                                    </tr>
+                                  
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-contenido">
+                <div class="contenedor-parla">
+                    <div class="contenedor_superior">
+                        <h2 class="titulo-tabla">Aprobacion</h2>
+                        
+                    </div>
+
+                    <div class="contenedor_tabla">
+                        <div class="table-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="text">Tipo de documento</th>
+                                        <th class="text">Archivo</th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                           Solicitud de credito
+                                        </td>
+                                        <td>solicitud.pdf</td>
+                                    
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Datos del solicitante	
+                                        </td>
+                                        <td>datos.pdf</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           Requisitos del solicitante
+                                        </td>
+                                        <td>Requisitos_soli.pdf</td>
+                                  
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Requisitos del deudor solidario
+                                        </td>
+                                        <td>Requisitos_deu.pdf</td>
+                                    </tr>
+                                
+                                </tbody>
+
+                            </table>
+                        </div>
+                        
+                    </div>
+                    <div class="contenedor-boton">
+                        <button class="confirmar" type="button">Notificar</button>
+                    </div>
+                    <div class="contenedor-boton">
+                        <button class="confirmar" type="button">Finalizar revision</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mainjoyce.js"></script>
+
+</body>
+
+</html>
