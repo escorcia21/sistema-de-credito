@@ -5,114 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/alimentar_parametros.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/header Vistas.css">
     <title>Document</title>
 </head>
 <body>
-    <!-- encabezado -->
-    <div id="encabezado">
-        <div id= "encabezado_derecho">
-            <ul>
-                <li class=listas_para_encabezados>SIGUENOS:</li>
-                <li class=listas_para_encabezados><i class="fab fa-facebook-square"></i></li>
-                <li class=listas_para_encabezados><i class="fab fa-twitter-square"></i></li>
-                <li class=listas_para_encabezados><i class="fab fa-instagram-square"></i></li>
-            </ul>
-        </div> 
-    </div>
-    <div id="menu">
-        <div id ="logo">
-            <a href="#" >
-                <img id="logo2" src="IMAGENES/Logo2.png">   
-                <img id="logo1" src="IMAGENES/Logo1.png"> 
-            </a> 
-        </div>
-        <div id="botones_menu">
-            <ul>
-                <li class=listas_para_encabezados><a class=letra_menu href="cambio_rol.html">CAMBIO DE ROL</a></li>
-                <li class=listas_para_encabezados><a id="informacion" href="alimentar_parametros.html">ALIMENTAR PARÁMETROS</a></li>
-            </ul>
-        </div>
-        <div id="usuario">
-            <ul>
-                <li class=listas_para_encabezados>
-                    <div id ="div_imagen_usuario">
-                        <img id="imagen_usuario"src="IMAGENES/Logo.png">   
+    <header>
+        <div class="Header-Usuario">
+            <nav class="Extensiones-1">
+                <div class="Logo"><img class="" src="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg" alt="" height="59"><span>Universidad<br>Libre</span>
+            </nav>
+            <div class="user">
+                <i class="fas fa-user" id="iconouser"></i>
+                <p>Johan Ramírez</p>
+                <div class="caja-boton">
+                    <button class="boton"><i class="fas fa-caret-left"></i>
+                    </button>
+                    <div class="desplegable">
+                        <a href="">Cambiar clave</a>
+                        <a href="">Cerrar sesión</a>
                     </div>
-                    <div id="div_usuario">
-                        <select name="sel_usuario" id="sel_usuario" class=letra_menu>
-                            <option hidden selected>ADMINISTRADOR</option>
-                            <option class=letra_menu value="estudiante" style="color: black;">CONFIGURACIÓN</option>
-                            <option class=letra_menu value="cerrar_sesion" style="color: black;">CERRAR SESIÓN</option>
-                        </select>
-                    <div>
-                </li>
-            </ul>
+                </div>
+                
+            </div>
         </div>
-    </div>
+    </header>
 
     <div id="contenedor_central">
         <div class="container_todo-parametros">
             <h1>ALIMENTAR PARÁMETROS</h1>
             <div class="container-contenido">
-                <div class="container_año-periodo">
-                    <div class="container_año-p">
-                        <label for="SELECCIONAR" class="formulario__label">Año:</label>
-                            <select class="formulario-lista-des"name="SELECCIONAR">
-                                <option value="1">Seleccionar</option> 
-                                <option value="2">2021</option> 
-                                <option value="3">2022</option> 
-                                <option value="4">2023</option>
-                                <option value="5">2024</option> 
-                            </select>
+                <div class="contenedor_tabla">
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="text">Programa</th>
+                                    <th class="text">Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td contenteditable="true">Sistemas</td>
+                                    <td contenteditable="true">6to</td>
+
+                                </tr>
+                                <tr>
+                                    <td contenteditable="true">Sistemas</td>
+                                    <td contenteditable="true">6to</td>
+                                </tr>
+                                <tr>
+                                    <td contenteditable="true">Sistemas</td>
+                                    <td contenteditable="true">Aprobado</td>
+
+                                </tr>
+                                <tr>
+                                    <td contenteditable="true">Sistemas</td>
+                                    <td contenteditable="true">6to</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
                     </div>
-                    <div class="container_año-p">
-                        <label for="SELECCIONAR" class="formulario__label">Periodo:</label>
-                            <select class="formulario-lista-des"name="SELECCIONAR">
-                                <option value="1">Seleccionar</option> 
-                                <option value="2">-1</option> 
-                                <option value="3">-2</option> 
-                            </select>
-                    </div>
-                </div>
-                <div class="container-tabla">
-                    <table id="tabla">
-                        <tr class="tr_azul">
-                            <th>PROGRAMAS</th>
-                            <th>VALOR</th>
-                        </tr>
-                        <tr class="tr_blanco">
-                            <td>Ingenieria de sistemas</td>
-                            <td contenteditable="true">$5.000.000</td>
-                        </tr>
-                        <tr class="tr_gris">
-                            <td>Derecho</td>
-                            <td contenteditable="true">$4.000.000</td>
-                        </tr>
-                        <tr class="tr_blanco">
-                            <td>Ingenieria industrial</td>
-                            <td contenteditable="true">$4.000.000</td>
-                        </tr>
-                        <tr class="tr_gris">
-                            <td>Medicina</td>
-                            <td contenteditable="true">$12.000.000</td>
-                        </tr>
-                        <tr class="tr_blanco">
-                            <td>Negocios internacionales</td>
-                            <td contenteditable="true">$2.800.000</td>
-                        </tr>
-                        <tr class="tr_gris">
-                            <td>Contaduria</td>
-                            <td contenteditable="true">$3.800.000</td>
-                        </tr>
-                        <tr class="tr_blanco">
-                            <td>Microbiologia</td>
-                            <td contenteditable="true">$5.800.000</td>
-                        </tr>
-                        <tr class="tr_gris">
-                            <td>Bacteriologia</td>
-                            <td contenteditable="true">$4.800.000</td>
-                        </tr>
-                    </table>
+                    
                 </div>
                 <div class="container_todo-formatos">
                     <h1>FORMATO DE AUTENTICACIÓN</h1>
@@ -131,23 +86,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="formulario__grupo formulario__grupo-btn-Actualizar">
-                    <button type="submit" class="formulario__btn">Actualizar</button>
-                </div>
-            </div>
+                <button type="submit" class="formulario__btn">Actualizar</button>
         </div>
-                
-        
-    </div>
 
-<!-- footer -->
-    <footer id="footer">
-        <div id="contenedorfooter">
-            <p class=letra_menu>Copyright © 2020 Unilibre. Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional.
-                <br>Personería jurídica Res. 192 de 1946-06-27 – Ministerio de Gobierno.
-                Certificado de Existencia y Representación Legal</p>
-        </div>   
-    </footer>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
