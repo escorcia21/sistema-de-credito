@@ -14,13 +14,11 @@
 .contenedor_superior {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%
+    width: 100%;
 }
 
 .contenedor_tabla {
     display: flex;
-    padding-top: 40px;
     width: 100%;
     justify-content: center;
 }
@@ -59,8 +57,7 @@ table {
 
 .table-scroll {
     width: 100%;
-    height: 50vh;
-    max-height: 700px;
+    max-height: 500px;
     overflow-y: scroll;
 }
 
@@ -74,7 +71,8 @@ thead th {
     color: white;
 }
 
-th,td {
+th,
+td {
     border-bottom: 0.5px solid var(--grisuave2);
     padding: 20px 40px;
 }
@@ -83,10 +81,9 @@ td {
     background-color: white;
 }
 
-select{
+select {
     font-size: 16px;
 }
-
 
 .table-scroll::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -96,12 +93,13 @@ select{
     background-color: var(--color-rojo);
 }
 
-.search-box{
+.search-box {
     margin-right: 1rem;
 }
 
 @media(max-width: 1600px) {
-    th,td {
+    th,
+    td {
         border-bottom: 0.5px solid var(--grisuave2);
         padding: 15px 35px;
     }
@@ -111,7 +109,8 @@ select{
 }
 
 @media(max-width: 1150px) {
-    th,td {
+    th,
+    td {
         padding: 10px 25px;
     }
 }
@@ -121,7 +120,7 @@ select{
         width: 100%;
         height: 100%;
     }
-    .contenedor_tabla{
+    .contenedor_tabla {
         width: 100%;
         height: 60vh;
     }
@@ -131,36 +130,37 @@ select{
     .contenedor_superior h3 {
         font-size: 15px;
     }
-    .search-text{
+    .search-text {
         width: 150px;
     }
-    
-    select,.Opciones_combobox span{
+    select,
+    .Opciones_combobox span {
         font-size: 12px;
     }
 }
 
 @media(max-width: 590px) {
-    th,td {
+    th,
+    td {
         padding: 5px 10px;
         font-size: 12px;
     }
     .contenedor_superior h3 {
         font-size: 13px;
     }
-    .text{
+    .text {
         font-size: 14px;
     }
-    .search-text{
+    .search-text {
         width: 125px;
     }
-    .contenedor-parla{
+    .contenedor-parla {
         height: 75vh;
     }
     .table-scroll {
         height: 60vh;
     }
-    .titulo-tabla{
+    .titulo-tabla {
         display: none;
     }
 }

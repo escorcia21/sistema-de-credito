@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg"/>
-        
+    <link rel="shortcut icon" type="image/x-icon" href="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg" />
+
     <link rel="stylesheet" href="style/header Vistas.css">
 
     <link rel="stylesheet" href="style/Revision-joyce.css">
@@ -52,7 +52,7 @@
             <div id="Menu" class="contenedor-disable">
                 <nav class="clase-nav">
                     <div id="Boton_Menu" class="contenedor_a">
-                        <a class="tag_menu" >
+                        <a class="tag_menu">
                             <span>Revisor</span>
                             <div class="Div-Iconos">
                                 <i id="iniciocon_barra" class="fas fa-bars"></i>
@@ -65,7 +65,7 @@
                             <span>INICIO</span>
                         </a>
                     </div>
-                    
+
                     <div id="is_selected" class="contenedor_a">
                         <a class="tag_b" href="Solicitudes-joyce.html">
                             <div class="Div-Iconos">
@@ -74,18 +74,60 @@
                             <span>SOLICITUDES DE CREDITO</span>
                         </a>
                     </div>
-                    
+
                 </nav>
             </div>
 
             <div class="contenedor-contenido">
                 <div class="contenedor-parla">
                     <div class="contenedor_superior">
-                        <h3>Revision de datos del usuario</h3>
+                        <h2>Revision de datos del usuario</h2>
+                        <div class="contenedor_datos">
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Nombre completo:</h4>
+                                <h4 class="padding_h4">Carlos Alfredo Arrugon Da silva</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Programa:</h4>
+                                <h4 class="padding_h4">Ingeniería de Sistemas</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Semestre:</h4>
+                                <h4 class="padding_h4">Quinto</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Valor del semestre:</h4>
+                                <h4 class="padding_h4">3.000.000</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Periodo:</h4>
+                                <h4 class="padding_h4">2021-2</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Numero de cuotas:</h4>
+                                <h4 class="padding_h4"> 5</h4>
+                            </div>
+
+
+
+
+
+
+
+
+
+                        </div>
+
                     </div>
 
                     <div class="contenedor_tabla">
-                        <div class="table-scroll">
+                        <div class="table-scroll2">
                             <table>
                                 <thead>
                                     <tr>
@@ -97,7 +139,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            Solicitud de credito    
+                                            Solicitud de credito
                                         </td>
 
                                         <td>
@@ -106,7 +148,7 @@
                                             </div>
                                         </td>
 
-                                        <td> 
+                                        <td>
                                             <div class="Aprobar">
                                                 <a><i id="Botonaprovar" class="fas fa-thumbs-up"></i></a>
                                                 <a><i id="Desaprobar" class="fas fa-thumbs-down"></i></a>
@@ -116,16 +158,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            Datos del solicitante    
+                                            Datos del solicitante
                                         </td>
-                                        
-                                        <td>  
+
+                                        <td>
                                             <div class="Descargar">
                                                 <a href=""><i id="DescargarBoton" class="fas fa-download"></i></a>
                                             </div>
                                         </td>
 
-                                        <td> 
+                                        <td>
                                             <div class="Aprobar">
                                                 <a><i id="Botonaprovar2" class="fas fa-thumbs-up"></i></a>
                                                 <a><i id="Desaprobar2" class="fas fa-thumbs-down"></i></a>
@@ -135,10 +177,10 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            Requisitos solicitante     
+                                            Requisitos solicitante
                                         </td>
 
-                                        <td> 
+                                        <td>
                                             <div class="Descargar">
                                                 <a href=""><i id="DescargarBoton" class="fas fa-download"></i></a>
                                             </div>
@@ -154,10 +196,10 @@
 
                                     <tr>
                                         <td>
-                                            Requisitos Codeudor     
+                                            Requisitos Codeudor
                                         </td>
 
-                                        <td> 
+                                        <td>
                                             <div class="Descargar">
                                                 <a href=""><i id="DescargarBoton" class="fas fa-download"></i></a>
                                             </div>
@@ -171,22 +213,36 @@
                                         </td>
 
                                     </tr>
-                                
+
 
                                 </tbody>
-                            
+
                             </table>
-                            
+
                         </div>
-                        
+
                     </div>
+
+
+
+                    <div class="overlay" id="overlay">
+                        <div class="popup" id="popup">
+
+                            <h4 class="comentar">Comentarios acerca de la revisión</h4>
+                            <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+
+
+                        </div>
+                    </div>
+
                     <div class="contenedor-boton">
+                        <button onclick="window.location.href='Solicitudes-joyce.html'" class="cancelar" type="button"> </i>Cancelar</button>
                         <button onclick="window.location.href='Solicitudes-joyce.html'" class="confirmar" type="button">Finalizar revisión</button>
                     </div>
-                    
-                </div>
+
                 </div>
             </div>
+        </div>
         </div>
 
 

@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="img/Escudo_de_la_Universidad_Libre_de_Colombia.svg" />
-    
+
     <link rel="stylesheet" href="style/header Vistas.css">
 
+    <link rel="stylesheet" href="style/Revision-joyce.css">
     <link rel="stylesheet" href="style/Missolicitudes.css">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/Componentes-Usuario.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
     <title>Inicio</title>
 </head>
 
@@ -42,7 +42,7 @@
     <main>
         <div class="Contenedor-hongo">
             <div class="caja-title">
-                <h3 class="titulo"><i id="inicioicon" class="fas fa-clipboard-list"></i>SOLICITUDES DE CREDITO </h3>
+                <h3 class="titulo"><i id="inicioicon" class="fas fa-clipboard-list"></i>REVISIÓN</h3>
             </div>
         </div>
 
@@ -52,7 +52,7 @@
             <div id="Menu" class="contenedor-disable">
                 <nav class="clase-nav">
                     <div id="Boton_Menu" class="contenedor_a">
-                        <a class="tag_menu" >
+                        <a class="tag_menu">
                             <span>Revisor</span>
                             <div class="Div-Iconos">
                                 <i id="iniciocon_barra" class="fas fa-bars"></i>
@@ -65,7 +65,7 @@
                             <span>INICIO</span>
                         </a>
                     </div>
-                    
+
                     <div id="is_selected" class="contenedor_a">
                         <a class="tag_b" href="Solicitudes-joyce.html">
                             <div class="Div-Iconos">
@@ -74,208 +74,189 @@
                             <span>SOLICITUDES DE CREDITO</span>
                         </a>
                     </div>
-                    
+
                 </nav>
             </div>
 
             <div class="contenedor-contenido">
                 <div class="contenedor-parla">
                     <div class="contenedor_superior">
-                        <h3 class="titulo-tabla">Informacion de creditos</h3>
-                        <div class="search-box">
-                            <input class="search-text " type="text" name "" placeholder="Buscar...">
-                            <a href=""><i id="search" class="fas fa-search"></i></a>
-                        </div>
+                        <h2>Revision de datos del usuario</h2>
+                        <div class="contenedor_datos">
 
-                        <div class="combobox">
-                            <p class="Opciones_combobox">
-                                <span style="padding: right 4rm;">Estado:
-                                    <select id="leadType" class="box" name="lead_type">
-                                        <option value="1">Pendientes</option>
-                                        <option value="2">Aceptados</option>
-                                        <option value="3">Rechazados</option>
-                                    </select>
-                                </span>
-                            
-                            </p>
+                            <div class="semestre">
+                                <h4 class="width_h4">Nombre completo:</h4>
+                                <h4 class="padding_h4">Carlos Alfredo Arrugon Da silva</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Programa:</h4>
+                                <h4 class="padding_h4">Ingeniería de Sistemas</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Semestre:</h4>
+                                <h4 class="padding_h4">Quinto</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Valor del semestre:</h4>
+                                <h4 class="padding_h4">3.000.000</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Periodo:</h4>
+                                <h4 class="padding_h4">2021-2</h4>
+                            </div>
+
+                            <div class="semestre">
+                                <h4 class="width_h4">Numero de cuotas:</h4>
+                                <h4 class="padding_h4"> 5</h4>
+                            </div>
+
+
+
+
+
+
+
+
+
                         </div>
 
                     </div>
 
                     <div class="contenedor_tabla">
-                        <div class="table-scroll">
+                        <div class="table-scroll2">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th class="text">Nº Solicitud</th>
-                                        <th class="text">Nombre</th>
-                                        <th class="text">Programa</th>
-                                        <th class="text">Semestre</th>
-                                        <th class="text">Porcentaje</th>
-                                        <th class="text">Estado</th>
+                                        <th class="text">Tipo de documento</th>
+                                        <th class="text">Documento</th>
+                                        <th class="text">Revision</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <a href="Revision-joyce.html">3222433</a>
+                                            Solicitud de credito
                                         </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
+
+                                        <td>
+                                            <div class="Descargar">
+                                                <a href=""><i id="DescargarBoton" class="fas fa-download"></i></a>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="Aprobar">
+                                                <a><i id="Botonaprovar" class="fas fa-thumbs-up"></i></a>
+                                                <a><i id="Desaprobar" class="fas fa-thumbs-down"></i></a>
+                                            </div>
+                                        </td>
 
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="">3222433</a>
+                                            Datos del solicitante
                                         </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
+
+                                        <td>
+                                            <div class="Descargar">
+                                                <a href=""><i id="DescargarBoton" class="fas fa-download"></i></a>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="Aprobar">
+                                                <a><i id="Botonaprovar2" class="fas fa-thumbs-up"></i></a>
+                                                <a><i id="Desaprobar2" class="fas fa-thumbs-down"></i></a>
+                                            </div>
+                                        </td>
 
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="">3222433</a>
+                                            Requisitos solicitante
                                         </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
 
+                                        <td>
+                                            <div class="Descargar">
+                                                <a href=""><i id="DescargarBoton" class="fas fa-download"></i></a>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="Aprobar">
+                                                <a><i id="Botonaprovar3" class="fas fa-thumbs-up"></i></a>
+                                                <a><i id="Desaprobar3" class="fas fa-thumbs-down"></i></a>
+                                            </div>
+                                        </td>
                                     </tr>
+
                                     <tr>
                                         <td>
-                                            <a href="">3222433</a>
+                                            Requisitos Codeudor
                                         </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
 
-                                    </tr>
-                                    <tr>
                                         <td>
-                                            <a href="">3222433</a>
+                                            <div class="Descargar">
+                                                <a href=""><i id="DescargarBoton" class="fas fa-download"></i></a>
+                                            </div>
                                         </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
 
-                                    </tr>
-                                    <tr>
                                         <td>
-                                            <a href="">3222433</a>
+                                            <div class="Aprobar">
+                                                <a><i id="Botonaprovar4" class="fas fa-thumbs-up"></i></a>
+                                                <a><i id="Desaprobar4" class="fas fa-thumbs-down"></i></a>
+                                            </div>
                                         </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
 
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">3222433</a>
-                                        </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
 
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">3222433</a>
-                                        </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">3222433</a>
-                                        </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">3222433</a>
-                                        </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">3222433</a>
-                                        </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">3222433</a>
-                                        </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">3222433</a>
-                                        </td>
-                                        <td>mico mandante</td>
-                                        <td>Sistemas</td>
-                                        <td>6to</td>
-                                        <td>70%</td>
-                                        <td>Aprobado</td>
-
-                                    </tr>
 
                                 </tbody>
 
                             </table>
+
                         </div>
-                        
+
                     </div>
+
+
+
+                    <div class="overlay" id="overlay">
+                        <div class="popup" id="popup">
+
+                            <h4 class="comentar">Comentarios acerca de la revisión</h4>
+                            <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+
+
+                        </div>
+                    </div>
+
+                    <div class="contenedor-boton">
+                        <button onclick="window.location.href='Solicitudes-joyce.html'" class="cancelar" type="button"> </i>Cancelar</button>
+                        <button onclick="window.location.href='Solicitudes-joyce.html'" class="confirmar" type="button">Finalizar revisión</button>
+                    </div>
+
                 </div>
             </div>
         </div>
+        </div>
+
+
+
+
 
     </main>
 
 
+
+
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="mainjoyce.js"></script>
+    <script src="js/mainjoyce.js"></script>
 
 </body>
 
