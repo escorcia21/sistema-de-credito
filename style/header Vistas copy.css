@@ -138,4 +138,8 @@
     .desplegable{
         width: 5rem;
     }
+    
+    .Logo{
+        display: none;
+    }
 }
