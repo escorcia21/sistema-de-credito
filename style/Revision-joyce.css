@@ -1,43 +1,23 @@
-.contenedor-contenido {
-    display: grid;
-    grid-column: auto;
-    background-color: var(--background-color);
-    padding: 50px 0px;
-}
-
-.contenedor-parla {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    /*height: 80vh;*/
-}
-
-.contenedor_superior {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-.contenedor_tabla {
-    display: flex;
-    width: 850px;
-}
-
 .contenedor_datos {
     padding-top: 10px;
     display: flex;
     flex-direction: column;
-    padding-left: 1em;
 }
 
 .padding_h4 {
     padding-left: 1rem;
 }
+.contenedor-honguito {
+    display: grid;
+    position: relative;
+    min-height: calc(100vh - 156px);
+}
 
 .width_h4 {
-    width: 200px;
+    font-weight: 600 !important;
+    padding: 0 !important;
+    width: 160px;
+    margin-bottom: .4em;
 }
 
 .semestre {
@@ -225,4 +205,34 @@ td {
 .comentar {
     text-transform: uppercase;
     font-size: 20px;
+}
+
+@media(max-width: 768px) {
+    .contenedor-honguito {
+        display: grid;
+        position: relative;
+        min-height: calc(100vh - 132px);
+    }
+}
+
+@media(max-width: 590px) {
+    .contenedor-honguito {
+        min-height: calc(100vh - 103px);
+    }
+}
+
+@media(max-width: 420px) {
+
+    #Menu nav {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        position: fixed;
+    }
+    .tag_a{
+        min-height: 66px;
+    }
+    .contenedor-honguito {
+        padding-bottom: 76px;
+    }
 }

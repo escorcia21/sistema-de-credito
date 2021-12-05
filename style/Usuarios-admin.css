@@ -14,13 +14,11 @@
 .contenedor_superior {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 70%;
 }
 
 .contenedor_tabla {
     display: flex;
-    padding-top: 40px;
     width: 70rem;
 }
 

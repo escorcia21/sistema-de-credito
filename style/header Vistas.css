@@ -7,7 +7,52 @@
     position: relative;
     z-index: 3;
 }
+.Extensiones-1 a:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+    color: var(--color-rojo);
+}
 
+.Extensiones-1{
+    display: flex;
+}
+
+.Extensiones-2{
+    display: flex;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right: 2em;
+}
+
+.button{
+    font-size: 1rem;
+    display: flex;
+    text-decoration: none;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    color: rgba(112,112,112,1);
+}
+
+.Logo{
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo span{
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 7em;
+}
+
+.Logo img{
+    padding: 6px;
+}
 #iconouser {
     margin-right: 15px;
     font-size: 35px;
@@ -23,13 +68,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.Logo span {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    font-weight: bold;
-    font-size: 1rem;
 }
 
 .caja-boton {
@@ -59,7 +97,6 @@
 }
 
 .Logo {
-    width: 4em;
     height: 3em;
 }
 
